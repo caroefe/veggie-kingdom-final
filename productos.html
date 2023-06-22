@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css"/>
+  
+
+  <link rel="stylesheet" href="sharp/stylesheet.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- favicon -->
+ <link rel="icon" href="img/favicon.png">
+  <title>Productos</title>
+</head>
+
+<body>
+
+  <header class="fondoHeader">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+          <img src="img/icon.png" alt="Bootstrap" width="20%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="visitanos.html">Visitanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <section class="p-5 carrito">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="text-center p-4">
+              <p class="fs-1 text-dark p-0 m-0">Mirá nuestros productos y </p>
+              <h1 class="display-2 text-dark p-0 m-0">Hacé tu pedido</h1>
+            </div>
+            <h2 class="text-dark p-4">Nuestras burgers</h2>
+
+            <div id="hamburguesas" class="row text-light">
+              <!-- Acá vienen los productos -->
+            </div>
+            <h2 class="text-dark p-4">Milanesas</h2>
+            <div id="milanesas" class="row text-light">
+              <!-- Acá vienen los productos -->
+            </div>
+
+            <h2 class="text-dark p-4">Para picar</h2>
+            <div id="paraPicar" class="row text-light">
+              <!-- Acá vienen los productos -->
+            </div>
+
+            <h2 class="text-dark p-4">Bebidas</h2>
+            <div id="bebidas" class="row text-light">
+              <!-- Acá vienen los productos -->
+            </div>
+
+          
+        </div>
+    </div>
+
+</section>
+
+<section class="p-5 bg-dark">
+
+    <div class="container-fluid">
+      <div class="row align-items-center text-center">
+        <h2 class="text-light text-center">Tu pedido</h2>
+          <div id="smartcart" class="text-light text-start"></div>
+          </div>
+        </div>
+
+</section>
+
+
+  <div id="myButton" class="venom-button"> 
+    
+  </div>
+
+
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <div class="mb-4">
+        <p>Diseñado por: Ashley Brenner | Frontera Carolina | Belén Luciano | Vazquez Vanina | ORT Diseño Gráfico Desarrollo II - 1°2°A</p>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-instagram"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-whatsapp"></i></a>
+
+      </div>
+    </div>
+    <div id="year" class="text-center p-3 bg-dark-subtle">
+      © <span class="year"></span> Veggie Kingdom
+    </div>
+
+  </footer>
+
+  <!-- fin productos -->
+  
+  <!-- JavaScript, Bootstrap, jQuery -->
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+  <script src="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+  <script src="vendors/jquery-smartcart/dist/js/jquery.smartCart.min.js"></script>
+  <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+  <!-- Scripts -->
+  <script src="js/productos.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+  <script>
+    $(document).ready(function () {
+    $('#myButton').venomButton({
+    phone: '1562278972',
+    chatMessage: 'Chat Window Title',
+    message: "Chat Message",
+    nameClient: "jQuery Script",
+    position: 'right',
+    showPopup: true
+    });
+    });
+
+    /*calcula el año actual ;)*/
+    var yearElement = document.querySelector('.year');
+
+    var currentYear = new Date().getFullYear();
+
+    yearElement.textContent = currentYear;
+  </script>
+
+</body>
+
+</html>

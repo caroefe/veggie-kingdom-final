@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+    href="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet"
+    href="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css" />
+
+
+  <link rel="stylesheet" href="sharp/stylesheet.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.png">
+  <title>Contacto</title>
+</head>
+
+<body>
+
+  <header class="fondoHeader">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+          <img src="img/icon.png" alt="Bootstrap" width="20%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="visitanos.html">Visitanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <section id="contacto">
+    <div class="oranje text-center text-light pt-5">
+      <p class="fs-1 text-dark p-0 m-0">Escribinos y nos ponemos en </p>
+      <h1 class="display-2 text-dark p-0 m-0">Contacto</h1>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <form action=" " method="post" enctype="multipart/form-data" class="col-6 mx-auto needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="yourname" class="form-label text-light fs-5 fw-semibold">Nombre completo:</label>
+            <input type="text" class="form-control" id="yourname" placeholder="" required>
+            <div class="invalid-feedback text-light">
+              Por favor, escribí tu nombre
+            </div>
+            <div class="valid-feedback text-light">
+              ¡Correcto!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="e-mail" class="form-label text-light fs-5 fw-semibold">Email:</label>
+            <input type="email" class="form-control" id="e-mail" placeholder="" required>
+            <div class="invalid-feedback text-light">
+              Email incorrecto
+            </div>
+            <div class="valid-feedback text-light">
+              ¡Genial!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-light fs-5 fw-semibold">Mensaje:</label>
+            <textarea class="form-control" id="message" rows="3" placeholder=""></textarea>
+          </div>
+          <div class="form-text text-light">
+            * Campos obligatorios
+          </div>
+          <div class="pt-4 pb-5">
+            <button id="toastButton" class="btn btn-primary fs-5 fw-semibold px-5" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast-container top-0 end-0 p-3">
+        <!-- Then put toasts within -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-primary">
+            <img src="img/icon.png" class="rounded me-2" alt="...">
+            <strong class="me-auto text-light">Veggie Kingdom</strong>
+            <small class="text-light">Ahora</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            ¡Mensaje enviado! Te contactamos tan rápido como podamos. 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <div class="mb-4">
+        <p>Diseñado por: Ashley Brenner | Frontera Carolina | Belén Luciano | Vazquez Vanina | ORT Diseño Gráfico
+          Desarrollo II - 1°2°A</p> <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-instagram"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-whatsapp"></i></a>
+
+      </div>
+    </div>
+    <div id="year" class="text-center p-3 bg-dark-subtle">
+      © <span class="year"></span> Veggie Kingdom
+    </div>
+
+  </footer>
+
+  <script>
+
+    (() => {
+      'use strict'
+
+      const forms = document.querySelectorAll('.needs-validation')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Evita el envío del formulario por defecto
+
+      var toast = new bootstrap.Toast(document.querySelector('.toast'));
+      toast.show();
+    });
+
+    /*calcula el año actual ;)*/
+    var yearElement = document.querySelector('.year');
+
+    var currentYear = new Date().getFullYear();
+
+    yearElement.textContent = currentYear;
+  </script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+
+  <!-- JavaScript, Bootstrap, jQuery -->
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+  <script src="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+  <script src="vendors/jquery-smartcart/dist/js/jquery.smartCart.min.js"></script>
+  <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/productos.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

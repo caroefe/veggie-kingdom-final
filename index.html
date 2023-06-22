@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="sharp/stylesheet.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- favicon -->
+ <link rel="icon" href="img/favicon.png">
+  <title>Veggie Kingdom</title>
+</head>
+
+<body>
+
+
+  <header class="fondoHeader">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+          <img src="img/icon.png" alt="Bootstrap" width="20%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#beneficios">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="visitanos.html">Visitanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row align-items-center justify-content-center mx-0">
+      <div class="col-md-6 p-0">
+        <img src="img/hamburguesa-header.png" class="img-fluid w-100 d-none d-md-block" alt="hamburguesa">
+      </div>
+      <div class="col-md-6 text-center">
+        <h1 class="display-1 d-flex flex-column align-items-center fw-bold pb-4">
+          <span class="text-primary text-left">Veggie</span>
+          <span class="text-danger ">Kingdom</span>
+        </h1>
+        <button type="button" class="btn btn-primary rounded-pill px-5 py-3 mb-5" onclick="window.location.href='productos.html'"  data-bs-toggle="button">Comprar</button>
+      </div>
+    </div>
+  
+  </header>
+
+  <section class="w-100" id="beneficios">
+    <div class="container pb-5 pt-5">
+      <div class="title-destacados">
+        <p class="text-center display-5">Mira nuestros</p>
+        <h2 class="text-center display-3">Deliciosos beneficios</h2>
+      </div>
+
+      <div class="row p-3 align-items-center justify-content-center pb-5 pt-5">
+        <div class="col-lg-3 col-md-6 pb-5 cardBeneficio">
+          <article class="card rounded-4 h-100">
+            <div class="card-body rounded-4 border-0 shadow p-3">
+              <i class="bi bi-flower1 text-primary"></i>
+              <h3 class="card-title text-center fs-5">100% vegetal</h3>
+              <p class="text-center"> Sabores sustentables para deleitarse con cada mordisco.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-5 cardBeneficio pb-5">
+          <article class="card rounded-4 h-100">
+            <div class="card-body rounded-4 shadow p-3">
+              <i class="bi bi-chat-left-heart text-primary"></i>
+              <h3 class="card-title text-center fs-5">Cruelty Free</h3>
+              <p class="text-center"> Sin afectar a ningún animal en la producción de nuestros alimentos</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-5 cardBeneficio pb-5">
+          <article class="card rounded-4 h-100">
+            <div class="card-body rounded-4 border-0 shadow p-3">
+              <i class="bi bi-globe-americas text-primary"></i>
+              <h3 class="card-title text-center fs-5">30% menos CO2</h3>
+              <p class="text-center"> Sabores con conciencia, opciones que reducen las emisiones de CO2.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-5 cardBeneficio">
+          <article class="card rounded-4 h-100">
+            <div class="card-body rounded-4 shadow p-3">
+              <i class="bi bi-droplet text-primary"></i>
+              <h3 class="card-title text-center fs-5">96% menos H20</h3>
+              <p class="text-center"> Sabores deliciosos y respetuosas con el medio ambiente.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destacados" class="d-flex flex-column ">
+
+
+    <h2 class="text-center display-3 title-destacados">Nuestros destacados</h2>
+    <div class="container my-auto">
+      <div class="owl-carousel owl-theme">
+        <div class="item"> <img src="img/hamburguesa1.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4">La favorita</p>
+        </div>
+        <div class="item"> <img src="img/hamburguesa2.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4">Para valientes</p>
+        </div>
+        <div class="item"> <img src="img/hamburguesa3.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4">La light</p>
+        </div>
+        <div class="item"> <img src="img/hamburguesa4.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4">La poderosa</p>
+        </div>
+        <div class="item"> <img src="img/hamburguesa5.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4">La Yankee</p>
+        </div>
+        <div class="item"> <img src="img/milanesa1.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4"> La mediterránea</p>
+        </div>
+        <div class="item"> <img src="img/hamburguesa7.png" alt="">
+          <p class="text-center p-2 fw-semibold fs-4">La explosiva</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="banner col-lg-12 col-md-12 d-sm-none d-md-block">
+      <div class="marquee display-6">
+        <ul>
+          <li>100% plant-based /</li>
+          <li>Libre de crueldad animal /</li>
+          <li>Productos naturales /</li>
+          <li>Sin impacto ambiental /</li>
+          <li>Saludable /</li>
+        </ul>
+      </div>
+      <img src="img/banner.png" class="banner-marquee img-fluid" alt="foto-banner">
+    </div>
+
+  </section>
+
+
+
+  <div id="sponsors">
+    <div class="container">
+      <h2 class="text-center display-3 title-destacados">Nuestros sponsors</h2>
+      <div class="row p-3 justify-content-center">
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-01.png" class="img-fluid" alt="Mostaza">
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-02.png" class="img-fluid" alt="burger king">
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-03.png" class="img-fluid" alt="McDonals">
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-04.png" class="img-fluid" alt="NotCo">
+        </div>
+      </div>
+
+      <div class="row p-3 justify-content-center">
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-05.png" class="img-fluid" alt="El club de la milanesa">
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-06.png" class="img-fluid" alt="dean and dennys">
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-07.png" class="img-fluid" alt="Burguer54">
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3">
+          <img src="img/logos-08.png" class="img-fluid" alt="VeganFox">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="preguntas-frecuentes">
+    <h2 class="text-center display-3 title-destacados p-5">Preguntas Frecuentes</h2>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+          <img src="img/faq-img.png" class="img-fluid" alt="preguntas frecuentes">
+        </div>
+        <div class="col-md-8 col-sm-12 accordion accordion-flush p-5 justify-content-center align-items-center" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed faq fs-3 text" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Qué es Veggie Kingdom?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse faq" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+              <p> En Veggie Kingdom, creemos en una forma de vida más compasiva y sostenible. 
+              <span class="fw-semibold">
+                Nuestra filosofía se basa en la creencia de que cada elección que hacemos puede tener un impacto positivo en el mundo que nos rodea. 
+              </span>
+              Es por eso que nos enorgullece ofrecer una experiencia culinaria deliciosa y respetuosa con el medio ambiente.
+              </p>
+              <p>
+                Nuestro menú, cuidadosamente elaborado, está repleto de opciones 100% veganas y deliciosas. Desde nuestras hamburguesas jugosas y sabrosas, elaboradas con ingredientes frescos y naturales, hasta nuestros tentadoras milanesas y platos acompañantes. Nos aseguramos de que cada bocado sea una experiencia culinaria inolvidable.
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed faq fs-3 text" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Cómo son nuestros productos?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse faq" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>
+                  Nos apasiona crear productos excepcionales que satisfacen tanto a los amantes de la comida como a aquellos comprometidos con el bienestar animal y la sostenibilidad del planeta. 
+                </p>
+                <p>
+                  Nuestros productos están cuidadosamente elaborados con ingredientes de origen vegetal de la más alta calidad. Cada hamburguesa, desde la clásica hasta las más innovadoras, es creada con una combinación única de proteínas vegetales, granos, verduras frescas y especias seleccionadas para obtener una explosión de sabor en cada bocado.
+                </p>
+                <p>
+                  Nos esforzamos por mantener un equilibrio perfecto entre el sabor y la calidad nutricional de nuestros productos. Además de ser deliciosas, nuestras hamburguesas son ricas en nutrientes esenciales y se adaptan a diferentes preferencias dietéticas. <span class="fw-semibold">
+                    Ofrecemos opciones sin gluten, sin soja y sin nueces, asegurando que todos puedan disfrutar de nuestros sabrosos manjares sin preocupaciones.
+                  </span>
+                    
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed faq fs-3 text" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Por qué elegirnos?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse faq"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>
+                  Nuestro objetivo final es proporcionar una experiencia culinaria que trascienda los límites de lo convencional y demuestre que la comida vegana puede ser emocionante, sabrosa y nutritiva. Creemos en un mundo donde la comida deliciosa y consciente puede coexistir, y estamos encantados de tener la oportunidad de compartir esa visión con la comunidad.
+                </p>
+                <p>
+                  Unite a nosotros y descubrí una nueva dimensión de sabor, donde la calidad y la compasión se unen en cada bocado. Nuestros productos están acá para demostrar que cuidar del sabor, los animales y el planeta puede ir de la mano y brindar una experiencia culinaria verdaderamente satisfactoria. 
+                  <span class="fw-bold">
+                    ¡Te esperamos con los brazos abiertos en Veggie Kingdom!
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Botón que sube -->
+
+  <a href="#" class="btn btn-primary btn-back-to-top d-none d-md-block" role="button">
+    <i class="bi bi-arrow-up botonSubir"></i>
+  </a>
+
+
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <div class="mb-4">
+        <p>Diseñado por: Ashley Brenner | Frontera Carolina | Belén Luciano | Vazquez Vanina | ORT Diseño Gráfico Desarrollo II - 1°2°A</p>        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="bi bi-instagram"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-whatsapp"></i></a>
+
+      </div>
+    </div>
+    <div id="year" class="text-center p-3 bg-dark-subtle">
+      © <span class="year"></span> Veggie Kingdom
+    </div>
+
+  </footer>
+
+  <script>
+    /*calcula el año actual ;)*/
+    var yearElement = document.querySelector('.year');
+
+    var currentYear = new Date().getFullYear();
+
+    yearElement.textContent = currentYear;
+  </script>
+
+
+  <!--Jquery-->
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+
+  <!--Owl carousel-->
+  <script src="vendors/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+  <script>
+    'use strict'
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+
+      });
+    });
+  </script>
+  <!--Marquee-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+
+  <script>
+
+    $('.marquee').marquee({
+      //duration in milliseconds of the marquee
+      duration: 5000,
+      //gap in pixels between the tickers
+
+      //time in milliseconds before the marquee will start animating
+      delayBeforeStart: 0,
+      //'left' or 'right'
+      direction: 'left',
+      //true or false - should the marquee be duplicated to show an effect of continues flow
+      duplicated: true
+    });
+  </script>
+
+  <script src="js/productos.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <!--Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

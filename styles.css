@@ -1,0 +1,307 @@
+h1,
+h2 {
+  font-family: 'sharp_groteskmedium_25';
+  src: url('sharpgrotesk-medium25-webfont.woff2') format('woff2'),
+    url('sharpgrotesk-medium25-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-primary{
+  color:#FFB819 !important;
+}
+
+.text-danger{
+color: #FEDE0B !important;
+
+}
+
+/*Header*/
+
+.fondoHeader {
+  background-image: url("img/fondo-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 768px) {
+  .fondoHeader {
+    background-image: none;
+    background-color: #A05FFF;
+  }
+}
+
+.btn-primary {
+  background-color: #6234A4 !important ;
+  color: white !important;
+  font-weight: 500;
+  border-color: #6234A4 !important;
+}
+
+.btn-primary:hover {
+  background-color: #A05FFF !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-color: #A05FFF !important;
+}
+
+.custom-line-height {
+  line-height: 0.3;
+}
+
+/*Beneficios*/
+
+#beneficios {
+
+  background-image: url("img/fondo-section-beneficios.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 120vh;
+}
+
+.cardBeneficio {
+  height: 300px;
+}
+
+/* Centrar el contenido de las cards */
+.cardBeneficio .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-beneficios{
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #beneficios {
+
+    background-image: none;
+    background-color: #FFB819;
+  }
+}
+
+.cardBeneficio i {
+  font-size: 4rem;
+}
+
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-text {
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/*Destacados*/
+
+#destacados {
+
+  background-image: url("img/fondo-section-destacados.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 120vh;
+
+}
+
+.title-destacados{
+  padding-top: 6rem !important;
+}
+
+@media (max-width: 768px) {
+  #destacados {
+    background-image: none;
+    background-color: #10DF8A
+  }
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-text {
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner{
+  position: relative;
+  font-family: 'sharp_groteskmedium_25';
+  src: url('sharpgrotesk-medium25-webfont.woff2') format('woff2'),
+    url('sharpgrotesk-medium25-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+
+}
+
+.banner img{
+  position: absolute;
+  z-index: 2;
+  bottom: -5rem;
+  left: 50%;
+ transform: translateX(-50%);
+}
+
+.marquee {
+
+  overflow: hidden;
+  background: #A075DF;
+  color: white;
+
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner .marquee ul li {
+  padding: 0.10rem;
+}
+
+/*preguntas frecuentes*/
+#preguntas-frecuentes{
+  background-image: url("img/fondo-section-faq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+}
+
+.faq{
+  background-color: #E9FFD4;
+  color: #008054;
+}
+.faqVisitanos{
+  background-color: #A05FFF;
+  color: #FEDE0B;
+}
+
+.button .accordion-button .faqVisitanos .fs-3 .text{
+  background-color:#A05FFF !important;
+}
+.accordion-button.custom-active {
+  background-color: green !important;
+  color: white;
+}
+.acordionVisitanos {
+  background-color: rgb(0, 0, 0,0)!important;
+  color: white;
+}
+
+.list-group-flush>.list-group-item{
+  background-color: #A05FFF;
+  color: #FEDE0B;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #A05FFF;
+  font-weight: 600;
+  color: #FEDE0B;}
+  
+  .acordionVisitanos .accordion-button:not(.collapsed) {
+  background-color:  #6234A4;
+  font-weight: 600;
+  color: #FEDE0B;}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+
+/*Footer*/
+
+.bg-dark {
+  background-color: #6234A4 !important;
+}
+
+/*boton sticky*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+
+}
+
+.btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+  font-size: 2rem;
+}
+
+.bg-info {
+
+  background-color: #A05FFF !important;
+
+}
+
+/*footer*/
+
+.bg-dark-subtle{
+
+background-color: rgba(0, 0, 0, 0.2) !important;
+
+}
+
+/* cards productos*/
+
+.bg-azul{
+
+  color: #275DCD;
+}
+
+.bg-primary{
+  background-color: #A05FFF !important;
+
+}
+
+.carrito{
+  background-image: url("img/fondo-productos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#nosotros, #contacto{
+  background-color: #A05FFF !important;
+
+}
+
+.oranje.text-center.text-light.pt-5{
+  background-color: #FFB819;
+  padding: 4rem;
+}
